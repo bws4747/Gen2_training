@@ -48,7 +48,7 @@ exptdesign.accuracyCutoff = 0.8; %accuracy required to advance level
 exptdesign.fixationImage = 'imgsscaled/fixation.bmp';  % image for the fixation cross
 exptdesign.blankImage = 'imgsscaled/blank.bmp';        % image for the blank screen
 
-piezoDriverGen2('open','/dev/cu.usbmodemFA131');
+piezoDriverGen2('open','COM3');
 VT_speechTraining_openSet_experiment_Gen2(name,exptdesign,1);
 sessDate = datestr(now, 'yyyymmdd_HHMM');
 %makeTrainingFigure(number,sessDate);
